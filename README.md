@@ -1,6 +1,6 @@
 # Estos son los archivos iniciales del proyecto
 
-## Este proyecto corresponde al tutorial de youtube: 
+## Este proyecto corresponde al tutorial visto en youtube: MundoPython 
 
 #### Para utilizarlo/configurarlo:
 
