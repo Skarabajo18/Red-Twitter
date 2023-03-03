@@ -1,12 +1,12 @@
 # Estos son los archivos iniciales del proyecto
 
-## Este proyecto corresponde al tutorial de youtube: 
+## Este proyecto corresponde al tutorial visto en youtube: MundoPython 
 
 #### Para utilizarlo/configurarlo:
 
 1. Clona el repositorio o descargalo como zip.
 
-```git clone https://github.com/mundo-python/social_project.git```
+```https://github.com/Skarabajo18/Red-Twitter.git```
 
 
 2. Crea un ambiente virtual 
