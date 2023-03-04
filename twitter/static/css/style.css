@@ -1,5 +1,5 @@
 body {
-  background: #00a8fc;
+  background: #121212;
   font-family: 'Asap', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
@@ -9,7 +9,7 @@ img {
 }
 
 .navbar {
-  background-color: #510404 /*#E0245E*/;
+  background-color: #121213 /*#E0245E*/;
 }
 
 .navbar-brand {
