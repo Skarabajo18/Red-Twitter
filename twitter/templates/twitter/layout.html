@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head style="color: rgb(46, 44, 44);" >
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's happening?</title>
@@ -13,36 +13,68 @@
 
     <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
     <link rel="stylesheet" type="text/css" href="../../static/css/bootstrap.css">
+    <!-- <link rel = 'stylesheet'href = '../../static/css/bootstrap.min.css'> -->
     
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="shortcut icon" href="../static/img/tab-icon.png" type="image/x-icon">
 </head>
 
+
+
 <body >
     {% load django_browser_reload %}
-    <div class="container-fluid" style="padding: 0;">
-        <nav class="navbar navbar-expand-lg "style="background-color: #563d7c">
-            <a class="navbar-brand" style="color: white;" href="#">
-                <!-- Twitter logo -->
-                <img src="{% static 'img/twitter-brands.svg' %}" width="30" height="30" class="d-inline-block align-top"
-                    alt="">
-                <!-- Twitter logo -->
-                Red
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="hi mr-auto">
-
-                </ul>
-                <!-- Nav Bar -->
-                <a href="#" class="btn text-white my-2 my-sm-0" type="submit">Inicio</a>
-                <a href="#" class="btn text-white my-2 my-sm-0" type="submit">Logout</a>
-                <!-- Nav Bar -->
+    <nav class = 'navbar navbar-expand-lg '>
+        <div class = 'container'>
+          <a class = 'navbar-brand text-white' href = '#'>Red</a>
+          <button class = 'btn btn-dark navbar-toggler border-3 px-2' type = 'button' data-bs-toggle = 'offcanvas'
+                  data-bs-target = '#offcanvasExample' aria-controls = 'offcanvasExample'
+          >
+            <img style = 'width: 30px' src = '../static/img/text-center.svg' alt = 'menu icon'>
+          </button>
+          <div class = 'offcanvas offcanvas-start-lg 'style="background-color:#7952b3" tabindex = '-1' id = 'offcanvasExample'
+               aria-labelledby = 'offcanvasExampleLabel'
+          >
+            <div class = 'offcanvas-header d-flex d-lg-none'>
+              <h5 class = 'offcanvas-title text-white' id = 'offcanvasExampleLabel'>Navbar</h5>
+              <a href='javascript:void(0) '
+                      class = 'text-reset p-0'
+                      data-bs-dismiss = 'offcanvas'
+                      aria-label = 'close'
+              >
+                <svg xmlns = 'http://www.w3.org/2000/svg'
+                     width = '24'
+                     height = '24'
+                     fill = '#FFFFFF'
+                     class = 'bi bi-x-circle'
+                     viewBox = '0 0 16 16'
+                >
+                  <path d = 'M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>
+                  <path d = 'M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/>
+                </svg>
+              </a>
             </div>
-        </nav>
-    </div>
-
-    <script src="{% static 'js/message.js' %}">getLocation()</script>
+            <div class = 'offcanvas-body p-lg-0'>
+              <ul class = 'navbar-nav'>
+                <li class = 'nav-item'>
+                  <a class = 'nav-link active' aria-current = 'page' href = '/'>Home</a>
+                </li>
+                <li class = 'nav-item'>
+                  <a class = 'nav-link active' aria-current = 'page' href = '/login'>Login</a>
+                </li>
+                <li class = 'nav-item'>
+                  <a class = 'nav-link active' aria-current = 'page' href = '/register'>Registro</a>
+                </li>
+                <li class = 'nav-item'>
+                  <a class = 'nav-link active' aria-current = 'page' href = '#'>Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <script src = "{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- <script src="{% static 'js/message.js' %}">getLocation()</script> -->
 
     {% block content %}
     <div id="main" class="container-fluid d-flex">
@@ -88,10 +120,10 @@
                     </div>
 
                     <!-- Formulario -->
-                    <form class="col pr-0">
+                    <form class="col pr-0  ">
                         <textarea class="form-control w-100" id="contentsBox"
-                            placeholder="What's happening?"></textarea>
-                        <div class="container d-flex" style="padding: 1rem 0 0 0;">
+                            placeholder="What's happening?" style="background-color: rgb(123, 58, 58)"></textarea>
+                        <div class="container d-flex" style="padding: 1rem 0 0 0;" >
                             <div id="leftBtn">
                                 <div id="charBadge" class="badge badge-pill badge-primary ml-2"
                                     style="display: flex;align-items: center;width: 50%;justify-content: center;">

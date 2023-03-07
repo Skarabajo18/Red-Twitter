@@ -56,13 +56,12 @@ img {
 
 .tweet-wrap {
   max-width: 490px;
-  background: #fff;
+  background: #0000004b;
   margin: 0 auto;
   margin-top: 50px;
   border-radius: 3px;
   padding: 30px;
-  border-bottom: 1px solid #e6ecf0;
-  border-top: 1px solid #e6ecf0;
+
 }
 
 .tweet-header {
@@ -177,17 +176,23 @@ a:link {
 }
 .input-wrapper{
     margin-bottom: 15px;
+    background-color: #000000;
+    border-radius: 15px;
+   
 }
 
 .input-wrapper label,
 .input-wrapper input{
     width: 100%;
     display: block;
+    border-radius: 15px;
+
 }
 
 .input-wrapper input{
     border: none;
-    background-color: #eee;
+    background-color: #000000;
+    border-radius: 15px;
     padding: 10px;
     font-size: 20px;
     border-bottom: 3px solid #6a6a6a;
@@ -198,17 +203,20 @@ a:link {
 }
 
 .input-wrapper input:focus{
+
     outline: none;
 }
 
 .input-wrapper label{
-    background-color: #eee;
+    background-color: #060606;
     padding: 10px;
+
     color: #6a6a6a;
 }
 
 .twitter-btn{
-    background-color: #1E96EB;
+    background-color: #7952b3;
+    border-radius: 15px;
     border: none;
     width: 100%;
     padding: 15px;
@@ -216,16 +224,18 @@ a:link {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-}
+} 
 
 .twitter-login-box .footer{
     text-align: center;
     margin-top: 20px;
-    color: #1E96EB;
+    color: #7952b3;
+        border-radius: 15px;
 }
 .twitter-login-box .footer a{
-    color: #1E96EB;
+    color: #7952b3;
     text-decoration: none;
+    
 }
 
 
@@ -400,3 +410,45 @@ i {
 		left: -25px;
 	}
 }
+
+/* navbar */
+@media (min-width : 992px) {
+  .offcanvas {
+    visibility      : visible;
+    position        : relative;
+    background      : none;
+    border          : none;
+    justify-content : end;
+    color           : rgb(0, 0, 0);
+  }
+}
+
+@media (max-width : 992px) {
+  .offcanvas {
+    width : 250px !important;
+  }
+
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    border-right : 1px solid rgba(0, 0, 0, .2);
+    transform    : translateX(-100%);
+  }
+
+}
+
+.navbar-nav li a {
+color: white !important;
+}
+
+.navbar{
+  padding: 0.75rem 0;
+  background-color: #7952b3;
+}
+
+/* .body{
+  background-color: #d1b8b8;
+} */
+
+
+/* login*/

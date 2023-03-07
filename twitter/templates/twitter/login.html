@@ -2,8 +2,27 @@
 
 {% block content %}
 
-<body class="login-page">
-    <div class="twitter-login-box">
+<body class="login-page" style="background: #121212;">
+
+    <div class="login-box">
+        
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+          </div><center>
+          <a href="#">
+                 SEND
+             <span></span>
+          </a></center>
+        </form>
+      </div>
+
+    <!-- <div class="twitter-login-box">
         <header>
             <img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-jumbo-v4.jpg?quality=90&auto=webp"
                 alt="twitter logo">
@@ -27,6 +46,8 @@
             <a href="#">Sign up to twitter</a>
         </div>
 
-    </div>
+    </div> -->
+
+</body>
     {% endblock content %}
 
