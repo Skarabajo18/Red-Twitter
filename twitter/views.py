@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from .models import Profile, Post
 
 
 def home(request):
-    return render(request, 'twitter/newsfeed.html')
+    posts = Post.objects.all()
+    context = {'posts': posts}
+    return render(request, 'twitter/newsfeed.html', context)
 
 
 def register(request):

@@ -66,17 +66,15 @@
 
         <!-- Tweets -->
         <div id="tweetCards">
-            <!-- FOR LOOP HERE -->
+            {% for post in posts  %}
             <div class="tweet-wrap" style="border-radius:20px">
                 <div class="tweet-header">
                     <img src="https://toppng.com/uploads/preview/roger-berry-avatar-placeholder-11562991561rbrfzlng6h.png"
                         alt="" class="avator">
                     <div class="tweet-header-info">
-                        * based snow bunny <span>@yumjeezy</span><span>. Jun 27
+                        {{ post.user.first_name }}<span>@{{ post.user}}</span><span>{{post.timestamp}}
                         </span>
-                        <p>🔥 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt
-                            ut labore et dolore magna aliqua. </p>
+                        <p>🔥{{ post.content}} </p>
                     </div>
                 </div>
                 <div class="tweet-info-counts">
@@ -134,7 +132,7 @@
             <!-- FOR LOOP HERE -->
 
         </div>
-        <!-- EndTweets -->
+        {% endfor %}
 
 
     </div>
