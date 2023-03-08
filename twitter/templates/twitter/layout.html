@@ -5,6 +5,8 @@
 <head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = 'viewport' content = 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+    <meta http-equiv = 'X-UA-Compatible' content = 'ie=edge'>
     <title>What's happening?</title>
     
     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
@@ -68,9 +70,18 @@
                 <li class = 'nav-item'>
                   <a class = 'nav-link active' aria-current = 'page' href = '#'>Contact</a>
                 </li>
+                <li class = 'nav-item'>
+                    <a class = 'nav-link active' aria-current = 'page' href="{% url 'home' %}" class="btn text-white my-2 my-sm-0" type="submit">Inicio</a>
+                </li>
+                <li class = 'nav-item'>
+                    <a class = 'nav-link active' aria-current = 'page' href="{% url 'logout' %}" class="btn text-white my-2 my-sm-0" type="submit">Logout</a>
+                </li>
               </ul>
             </div>
           </div>
+           <!-- Nav Bar -->
+           
+           <!-- Nav Bar -->
         </div>
       </nav>
       <script src = "{% static 'js/bootstrap.bundle.min.js' %}"></script>

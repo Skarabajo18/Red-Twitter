@@ -8,13 +8,8 @@ img {
   max-width: 100%;
 }
 
-.navbar {
-  background-color: #121213 /*#E0245E*/;
-}
 
-.navbar-brand {
-  font-weight: bold;
-}
+
 
 .avator {
   border-radius: 100px;
@@ -105,7 +100,7 @@ img {
   margin-right: 10px;
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:370px) {
   body {
     padding-left: 20px;
     padding-right: 20px;
@@ -132,7 +127,7 @@ img {
 }
 
 .btn {
-  background-color: #000000 /*E0245E*/ ;
+  background-color: #c41010 /*E0245E*/ ;
   border-style: none;
   font-weight: bold;
   color: white;
