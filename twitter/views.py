@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Profile, Post
+from .forms import UserRegistrerForm
 
 
 def home(request):
@@ -9,7 +10,15 @@ def home(request):
 
 
 def register(request):
-    return render(request, 'twitter/register.html')
+    if request.method == 'POST':
+        form = UserRegistrerForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = UserRegistrerForm()
+    context = {'form': form}
+    return render(request, 'twitter/register.html', context)
 
 
 def profile(request):

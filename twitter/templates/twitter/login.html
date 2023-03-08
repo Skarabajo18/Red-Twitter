@@ -1,41 +1,70 @@
 {% extends 'twitter/layout.html' %}
 
 {% block content %}
+<head>
+    <link rel="stylesheet" type="text/css" href="../../static/css/login.css">
+</head>
 
 <body class="login-page" style="background: #121212;">
-
-    <div class="login-box">
-        
-        <form>
-          <div class="user-box">
-            <input type="text" name="" required="">
-            <label>Username</label>
+<!--     
+    <div class="container-login">
+        <input id="register_toggle" type="checkbox">
+        <div class="slider">
+          <form class="form" method="post" >
+            <span class="title">Login</span>
+            <div class="form_control" >
+              <input required="" class="input" type="text">
+              <label class="label">Usuario</label>
+              
+            </div>
+            <div class="form_control">
+              <input required="post" class="input" type="password">
+              <label class="label">Contraseña</label>
+            </div>
+            <button>Login</button>
+      
+            <span class="bottom_text">Don't have an account? <label class="swtich" for="register_toggle">Sign Up</label> </span>
+          </form>
+          <form class="form">
+            <span class="title">Sign Up</span>
+            <div class="form_control">
+              <input required="" class="input" type="text">
+              <label class="label">Username</label>
+            </div>
+            <div class="form_control">
+              <input required="" class="input" type="email">
+              <label class="label">Email</label>
+            </div>
+            <div class="form_control">
+              <input required="" class="input" type="password">
+              <label class="label">Password</label>
+            </div>
+            <button>Sign Up</button>
+      
+            <span class="bottom_text">Already have an account? <label class="swtich" for="register_toggle">Sign In</label> </span>
+          </form>
+      
+          
           </div>
-          <div class="user-box">
-            <input type="password" name="" required="">
-            <label>Password</label>
-          </div><center>
-          <a href="#">
-                 SEND
-             <span></span>
-          </a></center>
-        </form>
-      </div>
+    </div> -->
 
-    <!-- <div class="twitter-login-box">
+    <div class="twitter-login-box">
         <header>
-            <img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-jumbo-v4.jpg?quality=90&auto=webp"
-                alt="twitter logo">
+            <!-- <img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-jumbo-v4.jpg?quality=90&auto=webp"
+                alt="twitter logo"> -->
             <h1>Inicia Sesión</h1>
         </header>
 
         <form method="post">
+          {% csrf_token %}
             <div class="input-wrapper">
                 <label for="user-name-id">Username</label>
+                {{ form.username }}
             </div>
 
             <div class="input-wrapper">
                 <label for="password-id">Password</label>
+                {{ form.password }}
             </div>
 
              <button class="twitter-btn " style="background-color: #121214;">Log in</button>
@@ -46,7 +75,7 @@
             <a href="#">Sign up to twitter</a>
         </div>
 
-    </div> -->
+    </div>
 
 </body>
     {% endblock content %}
